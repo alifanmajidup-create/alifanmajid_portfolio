@@ -1753,3 +1753,124 @@ h1.section-title::after {
 	display: block;
 	border-radius: 6px;
 }
+
+
+
+.portfolio-filter-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px 20px; /* vertical | horizontal spacing */
+  padding: 0;
+  margin: 0;
+}
+
+.portfolio-filter-list .filter-item {
+  list-style: none;
+  padding: 8px 18px;
+  font-size: 14px;
+  border-radius: 30px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .portfolio-filter-list {
+    gap: 10px 16px;
+  }
+
+  .portfolio-filter-list .filter-item {
+    font-size: 13px;
+    padding: 7px 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .portfolio-filter-list {
+    gap: 8px 12px;
+  }
+
+  .portfolio-filter-list .filter-item {
+    font-size: 12px;
+    padding: 6px 14px;
+  }
+}
+
+
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Card base */
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 18px 22px;
+  border-radius: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contact-card i {
+  font-size: 26px;
+  min-width: 36px;
+}
+
+.contact-card h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.contact-card p {
+  margin: 2px 0 0;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* Hover */
+.contact-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .contact-card {
+    padding: 16px 20px;
+    gap: 16px;
+  }
+
+  .contact-card i {
+    font-size: 24px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .contact-right {
+    gap: 14px;
+  }
+
+  .contact-card {
+    padding: 14px 16px;
+    gap: 14px;
+  }
+
+  .contact-card i {
+    font-size: 22px;
+  }
+
+  .contact-card h4 {
+    font-size: 15px;
+  }
+
+  .contact-card p {
+    font-size: 13px;
+  }
+}
