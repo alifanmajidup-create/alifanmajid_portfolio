@@ -1327,16 +1327,28 @@
 		.timeline-wrapper {
 			display: flex;
 			justify-content: flex-start;
-			/* rata kiri */
 			gap: 30px;
-			/* kecilkan jarak antar kolom */
 		}
 
 		.timeline-col {
 			flex: 0 0 auto;
-			/* supaya tidak melebar */
 			font-size: 12px;
 			line-height: 1.8;
+		}
+
+		/* RESPONSIVE MOBILE */
+		@media (max-width: 768px) {
+			.timeline-wrapper {
+				flex-direction: column;
+				/* jadi 1 kolom */
+				gap: 10px;
+				/* jarak antar baris */
+			}
+
+			.timeline-col {
+				font-size: 13px;
+				/* sedikit lebih besar biar nyaman dibaca */
+			}
 		}
 	</style>
 
